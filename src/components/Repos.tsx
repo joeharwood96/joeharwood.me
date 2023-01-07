@@ -2,11 +2,17 @@ import { FiStar, FiArrowRight } from "react-icons/fi";
 import { VscRepoForked } from "react-icons/vsc";
 import useSWR from 'swr';
 import fetcher from '../utils/fetcher';
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+import Skeleton from 'react-loading-skeleton';
+import type { Repo } from '../types/Github'
+import 'react-loading-skeleton/dist/skeleton.css';
+import type { Repos } from '../types/Github';
+
+interface GithubData {
+  repos: Repos;
+}
 
 export default function Repos() {
-  const { data } = useSWR('/api/github', fetcher);
+  const { data } = useSWR<GithubData>('/api/github', fetcher);
   console.log(data);
   
   return (
@@ -20,7 +26,7 @@ export default function Repos() {
 
       { data ? <>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-full gap-6">
-        {data?.repos.map((repo, index) => (
+        {data.repos.map((repo: Repo, index: number) => (
           <a
             key={index}
             href={`${repo.svn_url}`}

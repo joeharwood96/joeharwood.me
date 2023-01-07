@@ -1,4 +1,5 @@
 import { type NextRequest } from 'next/server';
+import { Repos } from '../../types/Github'
 
 export const config = {
   runtime: 'experimental-edge'
@@ -21,7 +22,7 @@ export default async function handler(req: NextRequest) {
   });
 
   const user = await userResponse.json();
-  const repositories = await userReposResponse.json();
+  const repositories: Repos = await userReposResponse.json();
   console.log(repositories);
   const mine = repositories?.filter((repo) => !repo.fork);
   const stars = mine?.reduce((accumulator, repository) => {
