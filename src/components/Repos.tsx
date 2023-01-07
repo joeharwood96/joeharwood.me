@@ -13,7 +13,6 @@ interface GithubData {
 
 export default function Repos() {
   const { data } = useSWR<GithubData>('/api/github', fetcher);
-  console.log(data);
   
   return (
     <section className="flex flex-col w-full gap-6 mb-10 prose prose-a:no-underline">

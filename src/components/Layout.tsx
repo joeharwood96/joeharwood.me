@@ -72,8 +72,8 @@ export default function Container({children, ...customMeta}: {children: ReactEle
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/guestbook" text="Guestbook" />
-            <NavItem href="/dashboard" text="Dashboard" />
-            <NavItem href="/blog" text="Blog" />
+            {/* <NavItem href="/dashboard" text="Dashboard" />
+            <NavItem href="/blog" text="Blog" /> */}
           </div>
           <button
             aria-label="Toggle Dark Mode"
