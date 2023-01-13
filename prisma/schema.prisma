@@ -64,3 +64,25 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model Message {
+  id         String   @id @default(cuid())
+  authorName String
+  createdAt  DateTime @default(now())
+  text       String
+  authorId   String
+}
+
+model guestbook {
+  id         String   @id @default(cuid())
+  email      String   
+  body       String   
+  created_by String   
+  created_at DateTime @default(now()) 
+  updated_at DateTime @default(now())
+}
+
+model views {
+  slug  String @id
+  count BigInt @default(1)
+}

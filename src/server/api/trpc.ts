@@ -67,7 +67,7 @@ export const createTRPCContext = async (opts: CreateNextContextOptions) => {
 import { initTRPC, TRPCError } from "@trpc/server";
 import superjson from "superjson";
 
-const t = initTRPC
+export const t = initTRPC
   .context<Awaited<ReturnType<typeof createTRPCContext>>>()
   .create({
     transformer: superjson,

@@ -1,5 +1,4 @@
-import { type NextRequest } from 'next/server';
-import { Repos } from '../../types/Github'
+import type { Repos } from '../../types/Github'
 
 export const config = {
   runtime: 'experimental-edge'
@@ -7,7 +6,7 @@ export const config = {
 
 const GITHUB_PERSONAL_ACCESS_TOKEN = process.env.GITHUB_PERSONAL_ACCESS_TOKEN
 
-export default async function handler(req: NextRequest) {
+export default async function handler() {
   const userResponse = await fetch('https://api.github.com/users/joeharwood96', {
     method: 'GET',
     headers: {

@@ -1,4 +1,5 @@
-import { useState, useRef } from 'react';
+import type { FormEvent } from 'react';
+import { useState } from 'react';
 import useSWR from 'swr';
 
 import fetcher from '../utils/fetcher';
@@ -14,7 +15,7 @@ export default function Subscribe() {
   const [email, setEmail] = useState<string>('')
   const subscriberCount = new Number(data?.count);
 
-  const subscribe = async (e: any) => {
+  const subscribe = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setForm({ state: Form.Loading });
 
