@@ -23,7 +23,7 @@ export default function Footer() {
           >
             Home
           </Link>
-          <Link
+          {/* <Link
             href="/about"
             className="text-gray-500 hover:text-gray-600 transition"
           >
@@ -34,7 +34,7 @@ export default function Footer() {
             className="text-gray-500 hover:text-gray-600 transition"
           >
             Newsletter
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://github.com/joeharwood96">GitHub</ExternalLink>
@@ -44,24 +44,24 @@ export default function Footer() {
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
-          <Link
+          {/* <Link
             href="/uses"
             className="text-gray-500 hover:text-gray-600 transition"
           >
             Uses
-          </Link>
+          </Link> */}
           <Link
             href="/guestbook"
             className="text-gray-500 hover:text-gray-600 transition"
           >
             Guestbook
           </Link>
-          <Link
+          {/* <Link
             href="/tweets"
             className="text-gray-500 hover:text-gray-600 transition"
           >
             Posts
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>
