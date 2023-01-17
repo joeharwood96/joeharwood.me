@@ -23,13 +23,13 @@ export default function Footer() {
           >
             Home
           </Link>
-          {/* <Link
+          <Link
             href="/about"
             className="text-gray-500 hover:text-gray-600 transition"
           >
             About
           </Link>
-          <Link
+          {/* <Link
             href="/newsletter"
             className="text-gray-500 hover:text-gray-600 transition"
           >
