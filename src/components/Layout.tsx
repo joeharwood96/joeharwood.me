@@ -39,7 +39,6 @@ export default function Container({children, ...customMeta}: {children: ReactEle
   const meta = {
     title: 'Joe Harwood – Developer, writer, creator.',
     description: 'Joe Harwood, British software engineer living in Amsterdam',
-    image: 'https://leerob.io/static/images/lee-banner.png',
     type: 'website',
     ...customMeta
   };
@@ -56,12 +55,6 @@ export default function Container({children, ...customMeta}: {children: ReactEle
         <meta property="og:site_name" content="Lee Robinson" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@leeerob" />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
         {/* {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )} */}
