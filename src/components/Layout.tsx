@@ -55,6 +55,7 @@ export default function Container({children, ...customMeta}: {children: ReactEle
         <meta property="og:site_name" content="Lee Robinson" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
+        <script async defer data-website-id="7bf4e10b-5a3a-4ba9-90d3-07e867927c7b" src="https://umami-production-01f9.up.railway.app/umami.js"></script>
         {/* {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )} */}
@@ -65,8 +66,8 @@ export default function Container({children, ...customMeta}: {children: ReactEle
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/guestbook" text="Guestbook" />
-            {/* <NavItem href="/dashboard" text="Dashboard" />
-            <NavItem href="/blog" text="Blog" /> */}
+            <NavItem href="/dashboard" text="Dashboard" />
+            {/* <NavItem href="/blog" text="Blog" /> */}
           </div>
           <button
             aria-label="Toggle Dark Mode"
