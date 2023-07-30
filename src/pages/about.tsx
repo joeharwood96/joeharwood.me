@@ -31,7 +31,7 @@ export default function AboutPage() {
           </ul>
           <h2 className="font-bold text-xl md:text-3xl tracking-tight my-4 text-black dark:text-white">Bio</h2>
           <h2 className="font-bold text-lg md:text-xl tracking-tight mb-4 text-black dark:text-white">Job Title</h2>
-          <p>Front End Software Engineer I at{' '}<span className="font-semibold">Booking.com</span></p>
+          <p>Front End Software Engineer II at{' '}<span className="font-semibold">Booking.com</span></p>
           <h2 className="font-bold text-lg md:text-xl tracking-tight my-4 text-black dark:text-white">Education</h2>
           <p>B.S. in Software Engineering from Manchester Metropolitan University</p>
       </div>
