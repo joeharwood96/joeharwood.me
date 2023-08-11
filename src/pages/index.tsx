@@ -16,7 +16,7 @@ const Home: NextPage = () => {
               Joe Harwood
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-              Front End Software Engineer II at{' '}
+              Software Engineer II at{' '}
               <span className="font-semibold">Booking.com</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
